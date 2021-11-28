@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import {count, length} from './number.js';
 
 let num = 30,
     flag = false;
@@ -20,9 +21,10 @@ function App() {
         <p style={{margin:10}}>
           Вывод числа: {23} <br />
           Вывод суммы чисел: {23 + num} <br />
+          Вывод произведения модуля: {count*length}
         </p>
 
-        {flag && <p> Логические операции</p>}
+        {flag && <p> Логические операции </p>}
         <p style={{margin:10}}> undefined {undefined} , null  {null}, true  {true} и false {false} не будут выводиться в разметку</p>
         
         <p style={{margin:10}}>
@@ -33,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default (App);
