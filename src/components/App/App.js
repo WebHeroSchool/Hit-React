@@ -21,16 +21,18 @@ class App extends React.Component {
 			}
 		]
 	};
-	render () {
-		
 
-	return (<div className = {styles.wrap}>
-		  <h1 className = {styles.title}>Список дел:</h1>
-		  <InputItem />
-		  <ItemList items = {this.state.items} />
-		  <Footer count={3} />
-		</div>
-	);
+	
+	onClickDone = isDone => console.log(isDone);
+
+	render () {
+		return (<div className = {styles.wrap}>
+			  <h1 className = {styles.title}>Список дел:</h1>
+			  <InputItem />
+			  <ItemList items = {this.state.items} onClickDone={this.onClickDone}/>
+			  <Footer count={3} />
+			</div>
+		);
 	}
 }
 
