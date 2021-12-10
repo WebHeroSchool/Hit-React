@@ -1,0 +1,16 @@
+/*.btn {
+    font-size: 8px;
+    padding: 5px;
+    text-transform: none;
+}*/
+
+.footer {
+	display: flex;
+	justify-content: 	space-between;
+	align-items: center;
+	margin: 0 10px 20px;
+}
+
+.footer__count {
+	font-size: 12px;
+}
