@@ -1,9 +1,13 @@
 .wrap {
 	margin: auto;
-	width: 300px;
+	width: 320px;
+	box-shadow: 0px 0px 10px grey;
+	padding: 10px;
+	border-radius: 10px;
 }
 
 .title {
-	color: red;
+	color: #15528f;
 	font-family: Helvetica;
+	text-align: center;
 }
