@@ -1,12 +1,19 @@
 import React from 'react';
 import Item from '../Item/Item';
+import List from '@mui/material/List';
 
 
 const ItemList = ({items, onClickDone}) => (
-	<ul>
+	<List>
 		{items.map(item => <li key={item.value}>
-			<Item value = {item.value} isDone = {item.isDone} onClickDone = {onClickDone} />
+			<Item 
+			value = {item.value} 
+			isDone = {item.isDone} 
+			onClickDone = {onClickDone} 
+			id = {item.id}
+			/>
 		</li>)}
-	</ul>);
+	</List>);
+
 
 export default ItemList;
