@@ -13,7 +13,7 @@ const styles = {
 	done: {textDecoration: 'line-through'}
 }
 
-const Item = ({value, isDone, classes, onClickDone, id}) => (
+const Item = ({value, isDone, classes, onClickDone, id, onClickDelete}) => (
 	<ListItem > 
 		<Checkbox 
 			id = {id}
@@ -29,8 +29,8 @@ const Item = ({value, isDone, classes, onClickDone, id}) => (
 		}} />
 
 		<ListItemSecondaryAction>
-			<IconButton aria-label = "Delete">
-				<DeleteIcon />
+			<IconButton aria-label = "Delete" >
+				<DeleteIcon onClick = {() => onClickDelete(id)} id = {id}/>
 			</IconButton>
 		</ListItemSecondaryAction>
 
