@@ -1,10 +1,10 @@
 import React from 'react';
 import Item from '../Item/Item';
 
-const ItemList = ({items}) => (
+const ItemList = ({items, onClickDone}) => (
 	<ul>
 		{items.map(item => <li key={item.value}>
-			<Item value = {item.value} isDone = {item.isDone} />
+			<Item value = {item.value} isDone = {item.isDone} onClickDone = {onClickDone} />
 		</li>)}
 	</ul>);
 
