@@ -1,7 +1,6 @@
 import React from 'react';
 // import classnames from 'classnames';
 // import styles from './Item.module.css';
-import ListItem from '@mui/material/ListItem';
 import Checkbox from '@mui/material/Checkbox';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemSecondaryAction from '@mui/material/ListItemSecondaryAction';
@@ -14,9 +13,8 @@ const styles = {
 }
 
 const Item = ({value, isDone, classes, onClickDone, id}) => (
-	<ListItem > 
-		<Checkbox 
-			id = {id}
+	<React.Fragment>
+		<Checkbox
 			checked = {isDone}
 			tabIndex = {-1}
 			onClick = {() => onClickDone(id)} 
@@ -33,8 +31,8 @@ const Item = ({value, isDone, classes, onClickDone, id}) => (
 				<DeleteIcon />
 			</IconButton>
 		</ListItemSecondaryAction>
-
-	</ListItem>);
+	</React.Fragment>
+);
 
 
 

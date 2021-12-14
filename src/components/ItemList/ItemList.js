@@ -1,18 +1,19 @@
 import React from 'react';
 import Item from '../Item/Item';
 import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 
 
 const ItemList = ({items, onClickDone}) => (
 	<List>
-		{items.map(item => <li key={item.value}>
+		{items.map(item => <ListItem key={item.value}>
 			<Item 
 			value = {item.value} 
 			isDone = {item.isDone} 
 			onClickDone = {onClickDone} 
 			id = {item.id}
 			/>
-		</li>)}
+		</ListItem>)}
 	</List>);
 
 
