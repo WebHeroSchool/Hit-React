@@ -30,7 +30,7 @@ const Item = ({value, isDone, classes, onClickDone, id, onClickDelete}) => (
 
 		<ListItemSecondaryAction>
 			<IconButton aria-label = "Delete" >
-				<DeleteIcon onClick = {() => onClickDelete(id)} id = {id}/>
+				<DeleteIcon onClick = {() => onClickDelete(id)} />
 			</IconButton>
 		</ListItemSecondaryAction>
 

@@ -55,7 +55,7 @@ class App extends React.Component {
 		return (<div className = {styles.wrap}>
 			  <h1 className = {styles.title}>Список дел:</h1>
 			  <InputItem />
-			  <ItemList items = {this.state.items} onClickDone={this.onClickDone}/>
+			  <ItemList items = {this.state.items} onClickDone={this.onClickDone} onClickDelete={this.onClickDelete}/>
 			  <Footer count={this.state.count} />
 			</div>
 		);
