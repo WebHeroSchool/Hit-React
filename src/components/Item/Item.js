@@ -28,8 +28,8 @@ const Item = ({value, isDone, classes, onClickDone, id, onClickDelete}) => (
 		}} />
 
 		<ListItemSecondaryAction>
-			<IconButton aria-label = "Delete" >
-				<DeleteIcon onClick = {() => onClickDelete(id)} />
+			<IconButton aria-label = "Delete" onClick = {() => onClickDelete(id)}>
+				<DeleteIcon  />
 			</IconButton>
 		</ListItemSecondaryAction>
 	</React.Fragment>
