@@ -12,7 +12,8 @@ const styles = {
 	done: {textDecoration: 'line-through'}
 }
 
-const Item = ({value, isDone, classes, onClickDone, id}) => (
+
+const Item = ({value, isDone, classes, onClickDone, id, onClickDelete}) => (
 	<React.Fragment>
 		<Checkbox
 			checked = {isDone}
@@ -27,8 +28,8 @@ const Item = ({value, isDone, classes, onClickDone, id}) => (
 		}} />
 
 		<ListItemSecondaryAction>
-			<IconButton aria-label = "Delete">
-				<DeleteIcon />
+			<IconButton aria-label = "Delete" onClick = {() => onClickDelete(id)}>
+				<DeleteIcon  />
 			</IconButton>
 		</ListItemSecondaryAction>
 	</React.Fragment>
